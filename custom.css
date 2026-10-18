@@ -1,0 +1,523 @@
+@font-face {
+    font-family: 'Aquire';
+    src: url('Aquire.otf') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alexana';
+    src: url('Alexana.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Aquire';
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: white; 
+    position: relative;
+    overflow-x: hidden;
+    display: grid;
+}
+
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Grid.gif');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6) contrast(1.2) saturate(0);
+    z-index: -2;
+    pointer-events: none;
+}
+
+.icon{
+    font-size: 40px;
+    color: #ffffff;
+    top: 34px;
+    left: 143px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: 370;
+    letter-spacing: 10px;
+}
+
+.Guide{
+    font-size: 32px;
+    color: #c3c3c3;
+    top: 82px;
+    left: 1524px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: 370;
+}
+
+#de{
+    color: #FF4D00;
+}
+.Guide:hover{
+    color: #FF4D00;
+    filter:drop-shadow(0px 0px 10px #fff);
+}
+
+.COde{
+    font-size: 32px;
+    color: #c3c3c3;
+    top: 82px;
+    left: 1674px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: 370;
+}
+.COde:hover{
+    color: #FF4D00;
+    filter:drop-shadow(0px 0px 10px #fff);
+}
+
+.Json1{
+    font-size: 128px;
+    color: #ffffff;
+    top: 300px;
+    left: 773px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: 370;
+    letter-spacing: 10px;
+}
+
+#UnJS1{
+    font-size: 40px;
+    color: #b7b7b7;
+    top: 560px;
+    left: 425px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: 370;
+    letter-spacing: 5px;
+}
+
+.ConFirDisp1{
+    font-size: 32px;
+    color: #b7b7b7;
+    top: 800px;
+    left: 880px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;  
+}
+.ConFirDisp1:hover{
+    color: #FF4D00;
+    filter:drop-shadow(0px 0px 10px #fff);
+}
+.ConDisp2:hover{
+    color: #FF4D00;
+    filter:drop-shadow(0px 0px 10px #fff);
+}
+.ConDisp3:hover{
+    color: #FF4D00;
+    filter:drop-shadow(0px 0px 10px #fff);
+}
+.ConDisp4:hover{
+    color: #FF4D00;
+    filter:drop-shadow(0px 0px 10px #fff);
+}
+.BackDisp2:hover{
+    color: #FF4D00;
+    filter:drop-shadow(0px 0px 10px #fff);
+}
+.BackDisp3:hover{
+    color: #FF4D00;
+    filter:drop-shadow(0px 0px 10px #fff);
+}
+.BackDisp4:hover{
+    color: #FF4D00;
+    filter:drop-shadow(0px 0px 10px #fff);
+}
+
+
+
+
+
+
+
+
+.Json2{
+    font-size: 96px;
+    color: #fff;
+    top: 300px;
+    left: 1500px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: 370;
+    letter-spacing: 10px;      
+}
+.UnJS2{
+    font-size: 24px;
+    color: #b7b7b7;
+    top: 450px;
+    left: 292px;
+    position: absolute;
+    font-weight: 370;
+    letter-spacing: 10px;   
+    text-align: right;
+    width: 1500px;
+    line-height: 135%; 
+}
+
+.ConDisp2{
+    font-size: 32px;
+    color: #b7b7b7;
+    top: 800px;
+    left: 940px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;      
+}
+
+.BackDisp2{
+    font-size: 32px;
+    color: #b7b7b7;
+    top: 800px;
+    left: 840px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;      
+}
+
+.ConDisp3{
+    font-size: 32px;
+    color: #b7b7b7;
+    top: 800px;
+    left: 940px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;      
+}
+
+.BackDisp3{
+    font-size: 32px;
+    color: #b7b7b7;
+    top: 800px;
+    left: 840px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;      
+}
+
+
+
+.MAP{
+    font-size: 64px;
+    color: #fff;
+    top: 230px;
+    left: 150px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: 370;
+    letter-spacing: 10px;          
+}
+.MAP_txt{
+    font-size: 24px;
+    color: #b7b7b7;
+    top: 330px;
+    left: 150px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;
+    letter-spacing: 2px;   
+    text-align: left;
+    width: 1500px;
+    line-height: 135%;          
+}
+._01{
+    font-family: 'Alexana';
+    font-size: 128px;
+    color: #fff;
+    opacity: 20%;
+    rotate: -9.65deg;
+    top: 130px;
+    left: 82px;
+    transform-origin: center;
+    position: absolute;
+    z-index: -1;   
+}
+.iTJUSTWORKS{
+    font-size: 64px;
+    color: #fff;
+    top: 500px; 
+    left: 1125px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: 370;
+    letter-spacing: 10px;          
+}
+.ITW_txt{
+    font-size: 24px;
+    color: #b7b7b7;
+    top: 630px;
+    left: 260px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;
+    letter-spacing: 2px;   
+    text-align: right;
+    width: 1500px;
+    line-height: 135%;          
+}
+._02{
+    font-family: 'Alexana';
+    font-size: 128px;
+    color: #fff;
+    opacity: 20%;
+    rotate: 17.3deg;
+    top: 400px;
+    left: 1630px;
+    transform-origin: center;
+    position: absolute;
+    z-index: -1;   
+}
+
+.BackDisp4{
+    font-size: 32px;
+    color: #b7b7b7;
+    top: 800px;
+    left: 920px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;     
+}
+
+.smth3{
+    font-size: 24px;
+    color: #ff783e;
+    top: 270px;
+    left: 1030px;
+    position: absolute;
+    text-align: right;
+    width: auto;
+}
+.smth3_1{
+    font-size: 24px;
+    color: #ff783e;
+    top: -80px;
+    left: -125px;
+    position: absolute;
+    text-align: left;
+    width: auto;
+}
+
+.kind{
+    font-size: 32px;
+    color: #FF4D00;
+    top: 640px;
+    left: 119px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;        
+}
+.python{
+    font-size: 32px;
+    color: #FF4D00;
+    top: 640px;
+    left: 716px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;        
+}
+.code{
+    font-size: 32px;
+    color: #FF4D00;
+    top: 640px;
+    left: 1313px;
+    transform-origin: center;
+    position: absolute;
+    font-weight: lighter;        
+}
+
+.Sergey{
+    font-size: 20px;
+    color: #fff;
+    top: 700px;
+    left: 119px;
+    transform-origin: right;
+    position: absolute;
+    font-weight: lighter; 
+    font-family: 'Alexana';        
+}
+.Timur{
+    font-size: 20px;
+    color: #fff;
+    top: 700px;
+    left: 716px;
+    transform-origin: right;
+    position: absolute;
+    font-weight: lighter;
+    font-family: 'Alexana';            
+}
+.Dmitriy{
+    font-size: 20px;
+    color: #fff;
+    top: 700px;
+    left: 1313px;
+    transform-origin: right;
+    position: absolute;
+    font-weight: lighter;
+    font-family: 'Alexana';           
+}
+
+.panel1{
+    top: 350px;
+    left: 119px;
+    position: absolute;
+}
+.panel2{
+    top: 350px;
+    left: 716px;
+    position: absolute;
+}
+.panel3{
+    top: 350px;
+    left: 1313px;
+    position: absolute;
+}
+
+.Library{
+    position: absolute;
+    color: #fff;    
+    font-size: 48px;
+    font-weight: lighter;
+    top: 200px;
+    left: 630px;
+    letter-spacing: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+#First_disp {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    pointer-events: auto; /* Теперь кнопка нажимается */
+    position: absolute;
+    width: 100%;
+}
+
+/* 2. Состояния остальных экранов */
+#Second_disp, #Third_disp, #Last_disp {
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(50px);
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+
+#trigger:checked ~ #First_disp {
+    opacity: 0;
+    transform: translateY(-50px);
+    pointer-events: none;
+}
+
+#trigger:checked ~ #Second_disp {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+#trigger1:checked ~ #Second_disp {
+    opacity: 0;
+    transform: translateY(-50px);
+    pointer-events: none;
+}
+
+#trigger1:checked ~ #Third_disp {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#trigger2:checked ~ #Third_disp {
+    opacity: 0;
+    transform: translateY(-50px);
+    pointer-events: auto;
+}
+
+#trigger2:checked ~ #Last_disp {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+
+
+        /* Настройка размера куба здесь */
+        :root {
+            --cube-size: 250px; 
+        }
+
+        .cube {
+            width: var(--cube-size);
+            height: var(--cube-size);
+            position: absolute;
+            transform-style: preserve-3d;
+            animation: rotate 10s linear infinite;
+            top: 375px;
+            left: 250px;
+        }
+
+        .face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgb(255, 102, 0);
+            /* Создание сетки 3x3 */
+            background-image: 
+                linear-gradient(to right, rgb(255, 102, 0) 1px, transparent 1px),
+                linear-gradient(to bottom, rgb(255, 102, 0) 1px, transparent 1px);
+            background-size: calc(100% / 3) calc(100% / 3);
+            display: flex;
+        }
+
+        /* Позиционирование граней */
+        .front  { transform: translateZ(calc(var(--cube-size) / 2)); }
+        .back   { transform: rotateY(180deg) translateZ(calc(var(--cube-size) / 2)); }
+        .right  { transform: rotateY(90deg) translateZ(calc(var(--cube-size) / 2)); }
+        .left   { transform: rotateY(-90deg) translateZ(calc(var(--cube-size) / 2)); }
+        .top    { transform: rotateX(90deg) translateZ(calc(var(--cube-size) / 2)); }
+        .bottom { transform: rotateX(-90deg) translateZ(calc(var(--cube-size) / 2)); }
+
+        @keyframes rotate {
+            from { transform: rotateX(0) rotateY(0); }
+            to { transform: rotateX(360deg) rotateY(360deg); }
+        }
+.download-button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 77, 0, 0.4);
+}
+@media (min-width: 768px) {
+    .element {
+
+    }
+}
+

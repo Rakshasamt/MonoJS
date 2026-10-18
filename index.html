@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>MonoJs - JSON Learning Platform</title>
+    <meta name="description" content="Learn JSON interactively with visual examples and tutorials">
+    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="website icon"  type="png" href="Logo.png">
+    <link rel="stylesheet" href="./font/css/all.min.css">
+    <script src="typed.umd.js"></script>
+</head>
+<body>
+
+    <div id="Main_display">
+        <div class="header-container">
+            <h1 class="icon">RA<br>Ak</h1>
+            <div class="social-container">
+                <a href="https://vk.ru/we_use_js" class="social-icon" title="VKontakte" target="_blank">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="https://pin.it/5GUpB6axR" class="social-icon" title="Pinterest" target="_blank">
+                    <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="https://t.me/codemu" class="social-icon" title="Telegram" target="_blank">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a href="https://rutube.ru/video/0b62636ab65f2a61878dd9a0e85a8897/" class="Guide nav-link" title="Watch Tutorial Guide">
+                    <i class="fas fa-play-circle"></i> Guide
+                </a>
+                <a href="index.html" download="sitecode.html" class="COde nav-link" title="Download Source Code">
+                    <i class="fas fa-code"></i> Code
+                </a>
+            </nav>
+        </div>
+        
+        <div class="hero-section">
+            <h2 class="hero-title">Learn <span class="highlight">JSON</span> Interactively</h2>
+            <p class="hero-subtitle">Master data exchange format with visual examples</p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="trigger" style="display:none;">
+    <div id="First_disp" class="screen">
+        <div class="screen-content">
+            <div class="json-header">
+                <h1 class="Json1">JSON</h1>
+                <div class="json-badge">JavaScript Object Notation</div>
+            </div>
+            <div class="typing-container">
+                <span id="UnJS1"></span>
+                <div class="cursor"></div>
+            </div>
+            <div class="navigation-buttons">
+                <label for="trigger" class="ConFirDisp1 nav-button next">
+                    <i class="fas fa-arrow-right"></i> Continue
+                </label>
+            </div>
+            <div class="progress-indicator">
+                <div class="progress-dot active"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="trigger1" style="display:none;">
+    <div id="Second_disp" class="screen">
+        <div class="screen-content">
+            <div class="visual-section">
+                <div class="cube-container">
+                    <div class="cube">
+                        <div class="face front"><span>{ }</span></div>
+                        <div class="face back"><span>"key": "value"</span></div>
+                        <div class="face right"><span>JSON</span></div>
+                        <div class="face left"><span>[ ]</span></div>
+                        <div class="face top"><span>data</span></div>
+                        <div class="face bottom"><span>format</span></div>
+                    </div>
+                    <div class="cube-label">Interactive JSON Cube</div>
+                </div>
+                
+                <div class="text-section">
+                    <h1 class="Json2">JSON</h1>
+                    <p class="UnJS2">Simple text format for <span class="highlight">data exchange</span>, widely<br>used for <span class="highlight">sending data</span> between servers and <br>web applications</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-exchange-alt"></i>
+                            <h3>Data Exchange</h3>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-server"></i>
+                            <h3>Server Communication</h3>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Web & Mobile</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <label for="trigger" class="BackDisp2 nav-button back">
+                    <i class="fas fa-arrow-left"></i> Back
+                </label>
+                <label for="trigger1" class="ConDisp2 nav-button next">
+                    Continue <i class="fas fa-arrow-right"></i>
+                </label>
+            </div>
+            <div class="progress-indicator">
+                <div class="progress-dot"></div>
+                <div class="progress-dot active"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="trigger2" style="display:none;">
+    <div id="Third_disp" class="screen">
+        <div class="screen-content">
+            <div class="tutorial-grid">
+                <div class="tutorial-card">
+                    <div class="card-header">
+                        <h1 class="MAP">make and put</h1>
+                        <div class="step-number">01</div>
+                    </div>
+                    <p class="MAP_txt">First of all you need to <span class="highlight">make</span> a json <br>After that put datas in file</p>
+                    <div class="code-preview">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span>example.json</span>
+                        </div>
+                        <div class="smth3 code-content">
+                            <span id="smth3"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="card-header">
+                        <h1 class="iTJUSTWORKS">iT JUST WORKS</h1>
+                        <div class="step-number">02</div>
+                    </div>
+                    <p class="ITW_txt">We using 'dumps' to <br> put values in <span class="highlight">existing json</span> file</p>
+                    <div class="code-preview">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span>python_code.py</span>
+                        </div>
+                        <div class="smth3_1 code-content">
+                            <span id="smth3_1"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navigation-buttons">
+                <label for="trigger1" class="BackDisp3 nav-button back">
+                    <i class="fas fa-arrow-left"></i> Back
+                </label>
+                <label for="trigger2" class="ConDisp3 nav-button next">
+                    Continue <i class="fas fa-arrow-right"></i>
+                </label>
+            </div>
+            <div class="progress-indicator">
+                <div class="progress-dot"></div>
+                <div class="progress-dot"></div>
+                <div class="progress-dot active"></div>
+                <div class="progress-dot"></div>
+            </div>
+        </div>
+    </div>    
+
+    <div id="Last_disp" class="screen">
+        <div class="screen-content">
+            <div class="library-header">
+                <h1 class="Library">Library for study</h1>
+                <p class="library-subtitle">Recommended resources to master programming</p>
+            </div>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="card-icon">
+                        <img src="kind.png" class="panel1">
+                    </div>
+                    <div class="card-content">
+                        <h1 class="kind">Kind kind python</h1>
+                        <p class="Sergey">By Sergey Balakirev</p>
+                        <div class="card-tags">
+                            <span class="tag">Beginner</span>
+                            <span class="tag">Tutorials</span>
+                        </div>
+                        
+                        <a href="https://stepik.org/course/100707/promo" class="card-button" target="_blank">Explore</a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="card-icon">
+                        <img src="python.png" class="panel2">
+                    </div>
+                    <div class="card-content">
+                        <h1 class="python">Python generation</h1>
+                        <p class="Timur">By Timur Guev</p>
+                        <div class="card-tags">
+                            <span class="tag">Intermediate</span>
+                            <span class="tag">Projects</span>
+                        </div>
+                        <a href="https://stepik.org/course/58852/promo" class="card-button" target="_blank">Explore</a>
+                    </div>
+                </div>
+
+                <div class="resource-card">
+                    <div class="card-icon">
+                        <img src="code.png" class="panel3">
+                    </div>
+                    <div class="card-content">
+                        <h1 class="code">Code.mu</h1>
+                        <p class="Dmitriy">By Dmitriy Trepachev</p>
+                        <div class="card-tags">
+                            <span class="tag">All Levels</span>
+                            <span class="tag">Exercises</span>
+                        </div>
+                        <a href="https://code.mu/" class="card-button" target="_blank">Explore</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <div class="footer-content">
+                    <h3 class="footer-title">Ready to start coding?</h3>
+                    <p class="footer-text">Download our template and begin your JSON journey today</p>
+                    <a href="index.html" download="sitecode.html" class="download-button">
+                        <i class="fas fa-download"></i> Download Starter Code
+                    </a>
+                </div>
+                
+                <div class="navigation-buttons">
+                    <label for="trigger2" class="BackDisp4 nav-button back">
+                        <i class="fas fa-arrow-left"></i> Back
+                    </label>
+                </div>
+                
+                <div class="progress-indicator">
+                    <div class="progress-dot"></div>
+                    <div class="progress-dot"></div>
+                    <div class="progress-dot"></div>
+                    <div class="progress-dot active"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Скрытый контейнер для строк -->
+        <div id="typed-strings" style="display:none;">
+            <p>File exchanger for simple processes</p>
+        </div>
+        <div id="typed-strings1" style="display:none;">
+            <p>lalala = {'Name': 'Svyatoslav', 'Daugther': 'Penelopa', <br>'Mother': 'Lyason', 'Father': 'Kirill'}</p>
+            <p>with open('lalala.json', 'w') as file: <br>file.write(dumps(lalala, indent = 6))</p>
+        </div>        
+        <div id="typed-strings2" style="display:none;">
+            <p>lalala = {'Name': 'Svyatoslav', 'Daugther': 'Penelopa', <br>'Mother': 'Lyason', 'Father': 'Kirill'}</p>
+            <p>with open('lalala.json', 'w') as file: <br>dump(lalala, file, indent = 4)</p>
+        </div> 
+    </div>
+
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Typed.js initialization
+            let typed1 = new Typed('#UnJS1', {
+                stringsElement: '#typed-strings',
+                typeSpeed: 50,
+                startDelay: 300,
+                backSpeed: 30,
+                backDelay: 1500,
+                showCursor: false,
+            });
+            
+            let typed2 = new Typed('#smth3_1', {
+                stringsElement: '#typed-strings1',
+                typeSpeed: 50,
+                startDelay: 300,
+                backSpeed: 30,
+                backDelay: 1500,
+                loop: true,
+                showCursor: false,
+            });
+
+            let typed3 = new Typed('#smth3', {
+                stringsElement: '#typed-strings2',
+                typeSpeed: 50,
+                startDelay: 300,
+                backSpeed: 30,
+                backDelay: 1500,
+                loop: true,
+                showCursor: false,
+            });
+
+            // Add hover effects to cards
+            document.querySelectorAll('.resource-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            // Add click effect to buttons
+            document.querySelectorAll('.nav-button, .card-button, .download-button').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    let ripple = document.createElement('span');
+                    let rect = this.getBoundingClientRect();
+                    let size = Math.max(rect.width, rect.height);
+                    let x = e.clientX - rect.left - size/2;
+                    let y = e.clientY - rect.top - size/2;
+                    
+                    ripple.style.cssText = `
+                        position: absolute;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.7);
+                        transform: scale(0);
+                        animation: ripple 0.6s linear;
+                        width: ${size}px;
+                        height: ${size}px;
+                        top: ${y}px;
+                        left: ${x}px;
+                    `;
+                    
+                    this.appendChild(ripple);
+                    setTimeout(() => ripple.remove(), 600);
+                });
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowRight') {
+                    let currentScreen = document.querySelector('.screen[style*="opacity: 1"]');
+                    let nextButton = currentScreen?.querySelector('.nav-button.next');
+                    if (nextButton) nextButton.click();
+                }
+                if (e.key === 'ArrowLeft') {
+                    let currentScreen = document.querySelector('.screen[style*="opacity: 1"]');
+                    let backButton = currentScreen?.querySelector('.nav-button.back');
+                    if (backButton) backButton.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+ё

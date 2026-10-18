@@ -1,0 +1,1 @@
+Place additional photos and illustrations here. Reference them as assets/images/filename.png in HTML. Existing kind.png, python.png and code.png stay in the project root so the original page keeps working.

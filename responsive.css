@@ -1,0 +1,104 @@
+/* MonoJs responsive additions.
+   The original s.css is preserved; these rules only adjust layout at smaller sizes. */
+
+/* Prevent fixed-width children and media from creating horizontal page scroll. */
+html { width: 100%; }
+body { width: 100%; min-width: 0; }
+img, video, iframe, canvas, svg { max-width: 100%; }
+img { height: auto; }
+.screen, .screen-content, .screen-content > *, .tutorial-card, .resource-card { min-width: 0; }
+.screen-content { width: 100%; }
+
+/* Medium laptops / smaller desktops */
+@media (max-width: 1200px) {
+  .screen { padding: clamp(1rem, 2.5vw, 2rem); }
+  .screen-content { padding: clamp(1rem, 2.5vw, 2rem); }
+  .visual-section { grid-template-columns: minmax(0, 1fr); }
+  .text-section { padding-left: 0; }
+  .tutorial-grid { grid-template-columns: minmax(0, 1fr); }
+  .resources-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .features-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+  .tutorial-card { padding: clamp(1.25rem, 3vw, 2.5rem); }
+  .code-content { overflow-wrap: anywhere; }
+}
+
+/* Tablets and phones */
+@media (max-width: 768px) {
+  #Main_display { padding: 1rem; }
+  .header-container {
+    gap: .75rem;
+    padding: .75rem 1rem;
+    flex-wrap: wrap;
+  }
+  .icon { font-size: clamp(1.4rem, 5vw, 2rem); letter-spacing: .25rem; }
+  .social-container { gap: .65rem; margin: .25rem auto 0; width: 100%; order: 3; }
+  .social-icon { width: 36px; height: 36px; font-size: 1rem; }
+  .main-nav { gap: .5rem; margin-left: auto; }
+  .nav-link { padding: .45rem .65rem; font-size: .95rem; }
+  .hero-section { padding: 1rem; max-width: 100%; }
+  .hero-title { font-size: clamp(1.6rem, 6vw, 2.5rem); overflow-wrap: anywhere; }
+  .hero-subtitle { font-size: clamp(.9rem, 2.8vw, 1.1rem); }
+  .screen { padding: .75rem; }
+  .screen-content { padding: clamp(.75rem, 3vw, 1.25rem); }
+  .Json1 { font-size: clamp(2.6rem, 11vw, 4rem); letter-spacing: .12em; }
+  .json-header { margin-bottom: 1.5rem; }
+  .json-badge { max-width: 100%; font-size: .8rem; letter-spacing: .06em; padding: .45rem .8rem; }
+  #UnJS1 { font-size: clamp(1.1rem, 4.3vw, 2rem); letter-spacing: .08em; overflow-wrap: anywhere; }
+  .typing-container { margin: 1.5rem 0; min-height: 4rem; }
+  .Json2 { font-size: clamp(2.2rem, 8vw, 3rem); letter-spacing: .12em; }
+  .UnJS2 { font-size: clamp(1rem, 3.2vw, 1.25rem); }
+  .UnJS2 br, .MAP_txt br, .ITW_txt br { display: none; }
+  .features-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; margin-top: 1.5rem; }
+  .feature { padding: 1rem .65rem; }
+  .feature i { font-size: 1.8rem; }
+  .MAP, .iTJUSTWORKS { font-size: clamp(1.25rem, 5vw, 1.8rem); letter-spacing: .12em; overflow-wrap: anywhere; }
+  .MAP_txt, .ITW_txt { font-size: 1rem; letter-spacing: .04em; }
+  .step-number { font-size: 2.5rem; flex-shrink: 0; }
+  .code-content { padding: .85rem; font-size: .9rem; overflow-x: auto; }
+  .Library { font-size: clamp(2rem, 7vw, 3rem); letter-spacing: .12em; }
+  .library-subtitle { font-size: 1rem; letter-spacing: .06em; }
+  .resources-grid { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+  .card-content { padding: 1.25rem; }
+  .card-tags { flex-wrap: wrap; }
+  .navigation-buttons { gap: .75rem; flex-wrap: wrap; }
+  .nav-button { max-width: 100%; }
+  .footer-text { font-size: 1rem; }
+  .download-button { max-width: 100%; justify-content: center; padding: .9rem 1rem; }
+}
+
+/* Narrow phones */
+@media (max-width: 480px) {
+  .header-container { justify-content: center; }
+  .icon { margin-right: auto; }
+  .main-nav { gap: .25rem; }
+  .nav-link { padding: .4rem .5rem; font-size: .85rem; }
+  .screen-content { padding: .65rem; }
+  .visual-section { gap: 1.5rem; }
+  .features-grid { grid-template-columns: minmax(0, 1fr); }
+  .tutorial-card { padding: 1rem; }
+  .card-header { gap: .5rem; }
+  .MAP, .iTJUSTWORKS { letter-spacing: .06em; }
+  .Library { letter-spacing: .06em; }
+  .Sergey, .Timur, .Dmitriy { letter-spacing: .08em; }
+  .navigation-buttons { flex-direction: column; align-items: stretch; }
+  .nav-button { width: 100%; justify-content: center; }
+  .progress-indicator { gap: .65rem; }
+}
+
+/* Very narrow devices and short landscape screens */
+@media (max-width: 360px) {
+  .main-nav { width: 100%; justify-content: flex-end; }
+  .social-container { margin-top: .5rem; }
+  .Json1 { font-size: 2.35rem; }
+  .json-badge { font-size: .7rem; }
+  .code-content { font-size: .8rem; }
+  .card-content { padding: 1rem; }
+}
+
+@media (max-height: 560px) and (orientation: landscape) {
+  .screen { padding-top: .5rem; padding-bottom: .5rem; }
+  .screen-content { justify-content: flex-start; }
+  .json-header { margin-bottom: .75rem; }
+  .typing-container { margin: .75rem 0; }
+  .navigation-buttons { margin: 1rem 0; }
+}
